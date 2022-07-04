@@ -7,7 +7,7 @@ class Post
     private string $content;
     private string $authorName;
 
-    public function __construct($title,$content,$authorName)
+    public function __construct( string $title, string $content, string $authorName)
     {
         $this->title=$title;
         $this->content=$content;
@@ -24,9 +24,9 @@ class Post
     }
 
     /**
-     * @return float|string
+     * @return string
      */
-    public function getDate(): float|string
+    public function getDate(): string
     {
         return $this->date;
     }
