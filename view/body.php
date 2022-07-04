@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 ?>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" xmlns="http://www.w3.org/1999/html">
+<form method="post">
 <div class="form-row align-items-center">
     <div class="col-auto">
         <label class="sr-only" for="inlineFormInput">Title:</label>
@@ -15,10 +15,10 @@ declare(strict_types=1);
     </div>
     <div class="col-auto">
         <label class="sr-only" for="inlineFormInput">Content:</label>
-        <textarea type="text" name="content" class="form-control mb-2" id="inlineFormInput" placeholder="content"></textarea>
+        <input type="text" name="content" class="form-control mb-2" id="inlineFormInput" placeholder="content">
     </div>
     </div>
     <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        <button type ="submit" name="submit" class="btn btn-primary mb-2">Submit</button>
     </div>
 </form>
